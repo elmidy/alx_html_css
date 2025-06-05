@@ -7,7 +7,6 @@ main {
 body {
     display: flex;
     flex-direction: column;
-
 }
 
 article {
@@ -18,4 +17,10 @@ article {
 aside {
     flex: 1;
     overflow-y: auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    color: nightblue;
 }
