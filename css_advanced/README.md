@@ -1,1 +1,0 @@
-Hey. This is the first responsive website.
