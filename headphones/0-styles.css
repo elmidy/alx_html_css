@@ -24,11 +24,11 @@ nav {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  margin: 20px 200px;
+  margin: 1.25em 12.5em;
 }
 
 .logo {
-  width: 160px;
+  width: 10em;
   height: fit-content;
 }
 
@@ -37,43 +37,55 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 320px;
+  width: 20em;
 }
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 240px 0;
+  margin: 15em 0;
 }
 
 .hero {
-  padding: 0 400px;
+  padding: 0 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-img {
   z-index: -1;
   position: absolute;
   top: 0;
+  width: 100%;
 }
 
+.hero-img img {
+  width: 100%;
+}
+
+button {
+  padding: 0 1em;
+  margin: 5em 0;
+}
+
+/*Styling*/
 button {
   color: white;
   font-weight: bold;
   background-color: #ff5656;
   border-style: none;
-  padding: 0 16px;
-  border-radius: 48px;
-  box-shadow: black 0 0 32px;
+  border-radius: 3em;
+  box-shadow: black 0 0 2em;
   cursor: pointer;
-  margin: 70px 0;
 }
 
 button:hover {
   opacity: 90%;
 }
 
-/*Styling*/
 a {
   text-decoration: none;
   color: white;
