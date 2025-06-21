@@ -1,0 +1,416 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Positioning */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1.25em 12.5em;
+}
+
+.logo {
+  width: 10em;
+  height: auto;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15em 0;
+}
+
+.hero {
+  padding: 0 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+#what-we-do {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  margin: 15em 15em 7.5em 15em;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10em;
+  width: 100%;
+}
+
+.icons-box {
+  display: block;
+  width: 13.125em;
+  height: auto;
+}
+
+#our-results {
+  width: 100%;
+}
+
+.results-txt {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 14em 25em 6.25em;
+  color: white;
+}
+
+.results-img {
+  width: 100%;
+  z-index: -2;
+  position: absolute;
+  top: 106.25em; /* 1700px */
+}
+
+.results-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 12.5em;
+}
+
+.results-box {
+  display: block;
+  width: 12.5em;
+}
+
+.results-box img {
+  width: 12.5em;
+  z-index: -1;
+  position: absolute;
+  top: 137.5em; /* 2200px */
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15em;
+  margin-bottom: 0;
+  color: #071629;
+}
+
+#contact h2 {
+  margin: 3em;
+  font-size: 3em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  margin-bottom: 2em;
+  width: 20.9375em;
+  border: none;
+  border-bottom: 0.0625em solid grey;
+  outline: none;
+  padding: 0.5em 0;
+  font-size: 1em;
+}
+
+form button {
+  width: 12em;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+button {
+  padding: 0 1em;
+  margin: 5em 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow: clip;
+  background-color: #071629;
+}
+
+footer section div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1.875em;
+  margin-bottom: 0;
+}
+
+footer section div img {
+  margin-right: 68.75em;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 8.125em;
+  margin-right: 0.625em;
+}
+
+footer section p {
+  color: white;
+  font-size: 0.875em;
+  font-weight: 400;
+  margin-bottom: 1.25em;
+}
+
+/* Styling */
+button {
+  color: white;
+  font-weight: bold;
+  background-color: #ff5656;
+  border-style: none;
+  border-radius: 3em;
+  box-shadow: black 0 0 2em;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover,
+a:active {
+  color: #ff5656;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.hero h3 {
+  margin: 0;
+}
+
+.what-txt p {
+  padding: 0 10em;
+}
+
+.icons-box span {
+  font-size: 10em;
+  color: #ff5656;
+}
+
+.results-txt h2 {
+  margin-bottom: 3em;
+}
+
+.results-box h3 {
+  color: white;
+  padding-top: 1.25em;
+  margin: 0;
+  font-size: 4em;
+  text-align: center;
+}
+
+.results-box p {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 64em) {
+  /* 1024px */
+  header {
+    padding: 1.5em 5vw;
+  }
+  .icons,
+  .results-icons {
+    gap: 1em;
+  }
+  .icons-box,
+  .results-box {
+    width: 8.75em;
+  }
+  .input {
+    width: 13.75em;
+  }
+}
+
+@media (max-width: 48em) {
+  /* 768px */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em 4vw;
+  }
+  .logo {
+    width: 8em;
+    margin-bottom: 1em;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    align-items: flex-start;
+  }
+  main {
+    margin: 3em 0;
+    padding: 0 2vw;
+  }
+  .hero {
+    padding: 0 2vw;
+  }
+  .icons,
+  .results-icons {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .icons-box,
+  .results-box {
+    width: 7.5em;
+  }
+  #contact {
+    margin: 2em 0 0 0;
+  }
+  .input {
+    width: 11.25em;
+  }
+}
+
+@media (max-width: 30em) {
+  /* 480px */
+  body {
+    font-size: 0.875em;
+  }
+  header {
+    padding: 1em 2vw;
+  }
+  .logo {
+    width: 6em;
+  }
+  .nav-menu {
+    gap: 0.5em;
+  }
+  main {
+    margin: 2em 0;
+    padding: 0 1vw;
+  }
+  .hero {
+    padding: 0 1vw;
+  }
+  .icons,
+  .results-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .icons-box,
+  .results-box {
+    width: 100%;
+    max-width: 13.75em;
+  }
+  #what-we-do,
+  #our-results,
+  #contact {
+    margin: 2em 0 1em 0;
+    padding: 0 1vw;
+  }
+  .input {
+    width: 100%;
+    max-width: 13.75em;
+  }
+  form button {
+    width: 100%;
+    max-width: 8.75em;
+  }
+  footer {
+    padding: 1em 0 0.5em 0;
+  }
+}
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#what-we-do,
+#our-results {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+#our-results {
+  animation-delay: 0.5s;
+}
